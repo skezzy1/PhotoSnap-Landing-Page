@@ -1,0 +1,116 @@
+/*.contact {
+    background-color: $white;
+    text-align: center;
+    //justify-content: space-between;
+    
+    @include breakpoint-up(medium) {
+      text-align: left;
+    }
+    &__form{
+        @include breakpoint-up(medium) {
+            flex: 1;
+            order: 2;
+        }
+    }
+    &__content {
+      padding: 3.75rem 1.25rem;
+      @include breakpoint-up(medium) {
+        padding: 3.75rem 2.5rem;
+      }
+  
+      @include breakpoint-up(large) {
+        padding: 3.75rem 5rem;
+      }
+    }
+    &__intro {
+      margin-top: 1.625rem;
+      margin-bottom: 3.75rem;
+      text-align: center;
+  
+      @include breakpoint-up(large){
+        flex: 2;
+        order: 1;
+        text-align: left;
+      }
+    }
+  
+    &__grid {
+      @include breakpoint-up(medium) {
+        display: flex;
+        flex-wrap: wrap;     
+      }
+    }
+    &__botton {
+      margin-top: 5.625rem;
+    }
+}
+.form__contact {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+
+  /* Add styles to the form container 
+  &__container-contact {
+    border-radius: 1.875rem;
+    text-align: center;
+    width: 21rem;
+    height: auto; /* Adjusted height to fit content 
+    padding: 1.25rem; /* Increased inner padding 
+    background-color: white;
+    position: fixed;
+    top: 10%; /* Adjusted top position 
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Full-width input fields 
+  &__container-contact input[type="text"],
+  &__container-contact input[type="email"],
+  &__container-contact textarea {
+    width: calc(100% - 1.875rem);
+    padding: 0.9375rem;
+    margin: 5px 0 22px 0;
+    border: none;
+    border-radius: 1.875rem;
+    background: #f1f1f1;
+  }
+
+  /* When the inputs get focus, do something 
+  &__container-contact input[type="text"]:focus,
+  &__container-contact input[type="email"]:focus,
+  &__container-contact textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  &__container-contact &__btn-contact {
+    margin-top: 0rem;
+    margin-bottom: 20px;
+  }
+
+  /* Add a red background color to the cancel button 
+  &__container-contact &__cancel-contact {
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: small;
+    width: 20px; /* Adjust the width *
+    height: 20px; /* Adjust the height *
+    border: none; /* Remove border *
+    cursor: pointer; /* Add cursor pointer *
+    padding: 0; /* Remove padding *
+    display: flex; /* Use flexbox for centering *
+    justify-content: center; /* Center horizontally *
+    align-items: center; /* Center vertically *
+    
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+*/

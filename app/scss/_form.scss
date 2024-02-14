@@ -1,0 +1,157 @@
+.form {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+
+  /* Add styles to the form container */
+  &__container {
+    border-radius: 1.875rem;
+    text-align: center;
+    width: 21rem;
+    height: 24.125rem; /* Increased maximum width */
+    padding: 1.25rem; /* Increased inner padding */
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Full-width input fields */
+  &__container input[type="text"] {
+    width: calc(100% - 1.875rem);
+    padding: 0.9375rem;
+    margin: 5px 0 22px 0;
+    border: none;
+    border-radius: 1.875rem;
+    background: #f1f1f1;
+  }
+
+  /* When the inputs get focus, do something */
+  &__container input[type="text"]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  &__container input[type="email"] {
+    width: calc(100% - 1.875rem);
+    padding: 0.9375rem;
+    margin: 5px 0 22px 0;
+    border: none;
+    border-radius: 1.875rem;
+    background: #f1f1f1;
+  }
+  /* When the inputs get focus, do something */
+  &__container input[type="email"]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  &__btn{
+    margin-top: 2rem;
+  }
+  /* Add a red background color to the cancel button */
+  &__container &__cancel {
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: small;
+    width: 20px; 
+    height: 20px; 
+    border: none;
+    cursor: pointer; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+
+  &__container &__cancel:hover {
+    opacity: 0.8;
+  }
+
+&__checkbox-container input[type="checkbox"] {
+  position: relative;
+  appearance: none; 
+  -webkit-appearance: none; 
+  width: 16px; 
+  height: 16px; 
+  border-radius: 50%; 
+  border: 2px solid #ccc; 
+
+  border-color: linear-gradient(129deg, rgba(238,174,202,1) 13%, rgba(48,34,212,1) 63%);
+}
+
+&__checkbox-container {
+  position: relative; 
+  top: 5px; 
+}
+
+
+&__checkbox-container input[type="checkbox"]:checked::before {
+  content: "";
+  display: block;
+  width: 8px; 
+  height: 8px; 
+  background-color: #007bff; 
+  border-radius: 50%; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+}
+.form__contact {
+  &__container {
+    border-radius: 1.875rem;
+    text-align: center;
+    width: 21rem;
+    height: 30.125rem; 
+    padding: 1.25rem; 
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__container-message {
+    width: calc(100% - 1.875rem);
+    padding: 0.9375rem;
+    margin: 5px 0 22px 0;
+    border: none;
+    border-radius: 1.875rem;
+    background: #f1f1f1;
+    width: 300px;
+  }
+  &__text-input-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  &__label {
+    font-size: 16px;
+    margin-bottom: 5px; 
+  }
+  
+  &__text-input {
+    margin-top: 5px;
+    width: 270px;   
+    height: 150px;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    border: none; 
+    border-radius: 1.075rem;
+    font-size:0.9rem;
+    background: #f1f1f1;
+    font-family:"Public Sans", sans-serif;
+
+    &:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+  }
+}
