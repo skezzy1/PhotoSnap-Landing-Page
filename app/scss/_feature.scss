@@ -2,7 +2,7 @@
   background-color: $lightGrayishBlue;
   text-align: center;
   justify-content: space-between;
-  
+     
   @include breakpoint-up(medium) {
     text-align: left;
   }
