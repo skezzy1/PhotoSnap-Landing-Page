@@ -48,6 +48,10 @@
   &__btn{
     margin-top: 2rem;
   }
+  &__closeBottom{
+   margin-bottom: 1px; 
+   margin-left: 1px;
+  }
   &__container &__cancel {
     background-color: red;
     position: absolute;
@@ -128,7 +132,10 @@
     font-size: 16px;
     margin-bottom: 5px; 
   }
-  
+  &__closeBottom{
+    margin-bottom: 1px; 
+    margin-left: 1px;
+   }
   &__text-input {
     margin-top: 5px;
     width: 270px;   
@@ -141,7 +148,7 @@
     font-size:0.9rem;
     background: #f1f1f1;
     font-family:"Public Sans", sans-serif;
-
+    
     &:focus {
       background-color: #ddd;
       outline: none;
